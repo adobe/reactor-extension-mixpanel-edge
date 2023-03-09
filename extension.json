@@ -4,7 +4,7 @@
   "iconPath": "resources/icons/mixpanel-logo.svg",
   "platform": "edge",
   "version": "1.0.0",
-  "description": "Forward data to Mixpanel by using the User Data API.",
+  "description": "Forward data to Mixpanel by using the Mixpanel Ingestion API.",
   "author": {
     "name": "Adobe",
     "url": "http://adobe.com"
