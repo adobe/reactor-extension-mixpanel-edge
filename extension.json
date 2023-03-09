@@ -1,6 +1,6 @@
 {
   "displayName": "Mixpanel",
-  "name": "mixpanel-connector-edge-preview",
+  "name": "mixpanel-connector-edge",
   "iconPath": "resources/icons/mixpanel-logo.svg",
   "platform": "edge",
   "version": "1.0.0",
