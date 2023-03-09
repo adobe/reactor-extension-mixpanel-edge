@@ -19,7 +19,7 @@ const buildFetchObject = (settings) => {
       'content-type': 'application/json',
       accept: 'text/plain'
     },
-    body: JSON.stringify(settings)
+    body: JSON.stringify([settings])
   };
 };
 

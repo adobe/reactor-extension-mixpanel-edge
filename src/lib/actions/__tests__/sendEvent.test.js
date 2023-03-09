@@ -40,7 +40,7 @@ describe('Send Event module', () => {
           accept: 'text/plain'
         },
         body:
-          '{' +
+          '[{' +
           '"event":"buy",' +
           '"properties":' +
           '{' +
@@ -48,7 +48,7 @@ describe('Send Event module', () => {
           '"time":"12345",' +
           '"custom property":"1"' +
           '}' +
-          '}'
+          '}]'
       });
     });
   });
