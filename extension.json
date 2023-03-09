@@ -1,0 +1,59 @@
+{
+  "displayName": "Mixpanel",
+  "name": "mixpanel-connector-edge-preview",
+  "iconPath": "resources/icons/mixpanel-logo.svg",
+  "platform": "edge",
+  "version": "1.0.0",
+  "description": "Forward data to Mixpanel by using the User Data API.",
+  "author": {
+    "name": "Adobe",
+    "url": "http://adobe.com"
+  },
+  "viewBasePath": "dist/",
+  "actions": [
+    {
+      "displayName": "Send Event",
+      "name": "send-event",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "event": {
+            "type": "string",
+            "minLength": 1
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "token": {
+                "type": "string",
+                "minLength": 1
+              },
+              "time": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  { "type": "number" }
+                ]
+              },
+              "distinct_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "$insert_id": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": ["token"]
+          }
+        },
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/actions/sendEvent.js",
+      "viewPath": "actions/sendEvent.html"
+    }
+  ]
+}

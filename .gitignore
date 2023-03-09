@@ -1,0 +1,9 @@
+node_modules
+coverage
+test_results
+dist
+.sandbox
+.entries
+adobe-reactor-extension-mixpanel-edge-*.tgz
+package-mixpanel-connector-edge-*.zip
+.eslintcache

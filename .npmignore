@@ -1,0 +1,9 @@
+__tests__
+src/view
+createEntryFile.mjs
+\.*
+webpack.*
+coverage
+jest.config.js
+package-mixpanel-connector-edge-*.zip
+adobe-reactor-extension-mixpanel-edge-*.tgz
