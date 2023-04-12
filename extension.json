@@ -3,7 +3,7 @@
   "name": "mixpanel-connector-edge",
   "iconPath": "resources/icons/mixpanel-logo.svg",
   "platform": "edge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Forward data to Mixpanel by using the Mixpanel Ingestion API.",
   "author": {
     "name": "Adobe",
