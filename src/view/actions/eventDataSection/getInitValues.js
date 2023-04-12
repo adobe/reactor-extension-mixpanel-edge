@@ -20,10 +20,10 @@ export default ({ settings }) => {
     time = '',
     token = '',
     distinct_id = '',
-    $insert_id = '',
-    ...restProperties
+    $insert_id = ''
   } = settings?.properties || {};
-  let eventPropertiesRaw = restProperties;
+
+  let eventPropertiesRaw = settings?.custom_properties || '';
 
   if (
     isObject(eventPropertiesRaw) &&

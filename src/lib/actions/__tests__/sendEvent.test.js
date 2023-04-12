@@ -22,7 +22,9 @@ describe('Send Event module', () => {
       event: 'buy',
       properties: {
         token: 'token',
-        time: '12345',
+        time: '12345'
+      },
+      custom_properties: {
         'custom property': '1'
       }
     };

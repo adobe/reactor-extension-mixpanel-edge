@@ -13,6 +13,21 @@ governing permissions and limitations under the License.
 /* eslint-disable camelcase */
 
 const buildFetchObject = (settings) => {
+  if (settings.custom_properties) {
+    const c = settings.custom_properties;
+
+    if (!settings.properties) {
+      settings.properties = {};
+    }
+
+    settings.properties = {
+      ...settings.properties,
+      ...c
+    };
+
+    delete settings.custom_properties;
+  }
+
   return {
     method: 'POST',
     headers: {

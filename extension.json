@@ -49,6 +49,12 @@
               }
             },
             "required": ["token"]
+          },
+          "custom_properties": {
+            "anyOf": [
+              { "type": "object" },
+              { "type": "string", "minLength": 1 }
+            ]
           }
         },
         "additionalProperties": false

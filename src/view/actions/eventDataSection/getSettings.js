@@ -52,15 +52,13 @@ export default ({
       data = eventPropertiesRaw;
     }
   }
+
   if (data) {
-    if (!settings.properties) {
-      settings.properties = {};
+    if (!settings.custom_properties) {
+      settings.custom_properties = {};
     }
 
-    settings.properties = {
-      ...settings.properties,
-      ...data
-    };
+    settings.custom_properties = data;
   }
 
   return settings;

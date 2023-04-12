@@ -58,7 +58,9 @@ describe('SendEvent view', () => {
           token: 'ABC',
           time: '123',
           distinct_id: 'AZS2',
-          $insert_id: '1SD',
+          $insert_id: '1SD'
+        },
+        custom_properties: {
           custom: 'value'
         }
       }
@@ -108,7 +110,9 @@ describe('SendEvent view', () => {
         token: 'token',
         distinct_id: 'distinct id',
         $insert_id: 'insert id',
-        time: '123',
+        time: '123'
+      },
+      custom_properties: {
         a: 'b'
       }
     });
