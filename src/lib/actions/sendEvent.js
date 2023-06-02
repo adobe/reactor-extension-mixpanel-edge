@@ -39,7 +39,7 @@ const buildFetchObject = (settings) => {
 };
 
 module.exports = async ({ utils }) => {
-  const { getExtensionSettings, getSettings, fetch } = utils;
+  const { getSettings, fetch } = utils;
   const settings = getSettings();
 
   return fetch('https://api.mixpanel.com/track', buildFetchObject(settings));
